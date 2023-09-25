@@ -13,7 +13,7 @@ const Navbar = () => {
     ]);
 
     return (
-        <div className='bg-paypal-600'>
+        <div className='bg-paypal-600 z-10'>
             <div className='flex flex-row justify-between mx-20 py-6'>
                 <div className='flex flex-row justify-center items-center'>
                     <Link to='/'>

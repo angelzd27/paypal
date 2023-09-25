@@ -5,7 +5,6 @@ import {
   faClockRotateLeft,
   faBuildingColumns,
   faFileInvoice,
-  faStore,
   faMagnifyingGlass,
   faUser
 } from "@fortawesome/free-solid-svg-icons"
@@ -94,7 +93,7 @@ const Home = () => {
         <div className="flex flex-row mx-10 mt-7">
           <div className="flex flex-col items-center mr-5">
             <div className="bg-paypal-700 flex items-center justify-center mb-3 p-5 rounded-full h-16 w-16">
-              <FontAwesomeIcon className="text-3xl" icon={faStore} style={{ color: "#ffffff", }} />
+              <FontAwesomeIcon className="text-3xl" icon={faUser} style={{ color: "#ffffff", }} />
             </div>
             <h4 className="text-paypal-800 font-bold hover:underline hover:cursor-pointer">Angel</h4>
           </div>

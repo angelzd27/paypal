@@ -11,8 +11,10 @@ function App() {
   return (
     <>
       <div className="bg-paypal-200">
-        <Navbar />
-
+        <div className="fixed w-full pb-16">
+          <Navbar />
+        </div>
+        <div className="pt-24">
           <Routes>
             <Route path='/' element={<Navigate to='/home' />} />
             <Route path='/home' element={<Home />} />
@@ -21,8 +23,11 @@ function App() {
             <Route path='/activity' element={<Activity />} />
             <Route path='/help' element={<Help />} />
           </Routes>
+        </div>
 
-        <Footer />
+        <div>
+          <Footer />
+        </div>
       </div>
     </>
   )
