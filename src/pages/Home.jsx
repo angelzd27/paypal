@@ -59,7 +59,7 @@ const Home = () => {
       </div>
 
 
-      <div className="bg-paypal-100 w-full ml-10 mb-10">
+      <div className="bg-paypal-100 w-full ml-10 mb-5 pb-10">
         {/* buttons */}
         <div className="flex flex-row justify-evenly items-center my-14">
           <button className="bg-[#ffd140] text-paypal-600 rounded-3xl p-2 w-56 h-14 text-xl font-extrabold">Send</button>
