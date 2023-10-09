@@ -49,7 +49,7 @@ const SearchComponent = ({ setSelect, setUsername }) => {
         <div className='flex flex-row justify-between ml-48 py-6 '>
           <div className='flex flex-row justify-center items-center text-xl'>
             {navLinks.map((link) => (
-              <Link key={link.to} className={`rounded-3xl p-4 text-black font-semibold mr-6 cursor-pointer hover:border-solid border-2 border-white hover:border-paypal-500 ${link.label === "Send" ? 'shadow-[0px_0px_7px_2px_rgba(0,0,0,0.1)] text-paypal-700 font-extrabold' : ''}`}>
+              <Link key={link.to} className={`rounded-3xl p-4 text-black font-semibold mr-6 cursor-pointer hover:border-solid border-2 hover:border-paypal-500 ${link.label === "Send" ? 'shadow-[0px_0px_7px_2px_rgba(0,0,0,0.1)] text-paypal-700 font-extrabold' : ''}`}>
                 {link.label}
               </Link>
             ))}
@@ -175,7 +175,8 @@ const CheckComponent = ({ setSelect, amount, username }) => {
         <video className='mt-5 w-60 h-60' autoPlay muted>
           <source src={success} type='video/mp4' />
         </video>
-        <h3 className='font-bold text-gray-500 mb-12 mt-5'>You've sent ${nf.format(amount)} USD to {username}</h3>
+        <h3 className='font-bold text-gray-500 mb-4 mt-5'>You've sent ${nf.format(amount)} USD to {username}</h3>
+        <h3 className='font-semibold text-sm text-gray-400 mb-8'>You will have your money in a period of 24-72 hours</h3>
         <button className='bg-paypal-700 text-white text-lg font-extrabold rounded-3xl w-96 h-12' onClick={() => {
           scrollToTop()
           setSelect(1)
